@@ -10,24 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApplication1
+namespace sln
 {
     /// <summary>
-    /// Interaction logic for Child1.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class Child1 : Window
+    public partial class MainWindow : Window
     {
-        public Window ParentWin;
-        public Child1()
+        public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded_1(object sender, RoutedEventArgs e)
-        {
-            TextBox1.Text += "\nparent: " + ParentWin.Name;
         }
     }
 }
